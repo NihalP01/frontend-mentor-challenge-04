@@ -47,25 +47,32 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--soft-orange);
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--off-white);
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+h4 {
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 p {
   color: var(--grayish-blue);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8rem;
+  margin: 1rem 0;
 }
 
 hr {
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 button {
@@ -90,6 +97,10 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: var(--off-white);
+  width: 100%;
 }
 
 .header-menu {
@@ -108,7 +119,8 @@ header {
 }
 
 .banner-section {
-  height: 100dvh;
+  /* height: 100dvh; */
+  margin-top: 6rem;
 }
 
 .banner {
@@ -148,6 +160,35 @@ header {
 }
 
 .new-news h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+
+.top-news {
+  display: flex;
+  margin: 6rem 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top-news > div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.top-news > div > div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: start; */
+}
+.top-news > div > div > h2 {
+  font-size: 2.5rem;
+  color: var(--grayish-blue);
+}
+
+.top-news > div > div > h4:hover{
   color: var(--soft-orange);
   cursor: pointer;
 }
