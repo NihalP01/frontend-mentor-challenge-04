@@ -1,0 +1,152 @@
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: local('Inter'), url('./assets/fonts/static/Inter-Regular.ttf'),
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  src: local('Inter'), url('./assets/fonts/static/Inter-Bold.ttf'),
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url('./assets/fonts/static/Inter-ExtraBold.ttf'),
+    format('truetype');
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.ui-padding {
+  padding: 0 12rem 0 12rem;
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--soft-orange);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+hr {
+  margin: 2rem 0 2rem 0;
+}
+
+button {
+  /* background-color: var(--very-dark-blue); */
+  background-color: var(--soft-red);
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: start;
+  gap: 2.5rem;
+}
+
+.header-menu a {
+  color: var(--grayish-blue);
+  font-weight: 600;
+}
+
+.header-menu a:hover {
+  color: var(--soft-orange);
+}
+
+.banner-section {
+  height: 100dvh;
+}
+
+.banner {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 2.5rem;
+}
+
+.banner-text {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.banner-text div:first-child {
+  width: 50%;
+}
+
+.banner-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 46%;
+}
+
+.banner-subtitle p {
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+  line-height: 2rem;
+}
+
+.new-news {
+  background-color: var(--very-dark-blue);
+  padding: 2rem;
+}
+
+.new-news h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
