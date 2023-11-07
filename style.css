@@ -92,6 +92,17 @@ button:hover {
   background-color: var(--very-dark-blue);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -105,6 +116,50 @@ header {
 
 .mobile-menu {
   display: none;
+}
+
+.mobile-menu-content {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Off-screen initially */
+  width: 250px;
+  height: 100%;
+  background-color: var(--off-white);
+  color: var(--very-dark-blue);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-content a {
+  font-size: 18px;
+  color: var(--very-dark-blue);
+  font-weight: 500;
+}
+
+.mobile-menu-content > div {
+  display: flex;
+  flex-direction: column;
+  top: 5rem;
+  position: absolute;
+  padding: 1rem;
+}
+
+.mobile-menu-content img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Styles for mobile menu open */
+.mobile-menu-open {
+  right: 0;
+}
+
+.mobile-menu-open div {
+  display: flex;
+  gap: 1rem;
 }
 
 .header-menu {
@@ -131,6 +186,10 @@ header {
   display: flex;
   margin-top: 1.5rem;
   gap: 2.5rem;
+}
+
+#main-banner-mobile {
+  display: none;
 }
 
 .banner-text {
@@ -267,6 +326,14 @@ header {
     flex-direction: column;
     margin-top: 1.5rem;
     /* gap: 2rem; */
+  }
+
+  #main-banner-desktop {
+    display: none;
+  }
+
+  #main-banner-mobile {
+    display: flex;
   }
   .banner-text {
     display: flex;

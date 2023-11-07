@@ -8,6 +8,7 @@
     <title>News | Technology</title>
   </head>
   <body>
+    <div id="overlay" class="overlay"></div>
     <header class="ui-padding">
       <img src="./assets/images/logo.svg" alt="logo" />
       <div class="header-menu">
@@ -18,16 +19,43 @@
         <a href="#">Categories</a>
       </div>
       <div class="mobile-menu">
-        <img width="30px" src="./assets/images/icon-menu.svg" alt="menu" />
+        <img
+          id="mobile-menu-icon"
+          width="30px"
+          src="./assets/images/icon-menu.svg"
+          alt="menu"
+        />
       </div>
     </header>
+    <div id="mobile-menu" class="mobile-menu-content">
+      <img
+        width="25px"
+        src="./assets/images/icon-menu-close.svg"
+        alt="close"
+        id="close-menu"
+      />
+      <div>
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </div>
     <main>
       <section class="banner-section ui-padding">
         <div class="banner">
           <div>
             <img
-              id="main-banner"
+              id="main-banner-desktop"
               src="./assets/images/image-web-3-desktop.jpg"
+              alt="main banner"
+              width="100%"
+              height="auto"
+            />
+            <img
+              id="main-banner-mobile"
+              src="./assets/images/image-web-3-mobile.jpg"
               alt="main banner"
               width="100%"
               height="auto"
